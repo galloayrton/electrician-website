@@ -20,8 +20,11 @@
   var secciones = {
     hero: function () {
       var h = S.hero;
-      return '<div class="hero"><div class="wrap"><div>' +
-        '<span class="pill"><b></b>' + h.etiqueta + '</span>' +
+      var item = function (o, c) {
+        return '<div class="bi ' + c + '"><span class="dot"></span><span>' + o.titulo + ' <strong class="nb">' + o.horas + '</strong></span></div>';
+      };
+      var banner = '<div class="banner" role="note">' + item(S.horarios.normal, 'bn') + item(S.horarios.urgencia, 'bu') + '</div>';
+      return '<div class="hero"><div class="wrap">' + banner + '<div>' +
         '<h1>' + h.titulo + ' <em>' + h.destacado + '</em></h1>' +
         '<p class="lead">' + h.texto + '</p>' + botones() +
         '<p class="nota">' + h.nota + '</p></div>' +

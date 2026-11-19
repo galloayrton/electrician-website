@@ -21,14 +21,13 @@ const SITE = {
   // Horarios (sin precios; solo se avisa que la guardia tiene costo adicional)
   horarios: {
     titulo: "Horarios de atención",
-    normal: { icono: "clock", titulo: "Horario normal", horas: "8:00 a 18:00 h",
+    normal: { icono: "clock", titulo: "Horario normal", horas: "8:00 a 18:00 hs",
       texto: "Visitas, presupuestos y trabajos programados en este horario." },
-    urgencia: { icono: "moon", titulo: "Guardia de urgencias", horas: "18:00 a 8:00 h",
+    urgencia: { icono: "moon", titulo: "Guardia de urgencias", horas: "18:00 a 8:00 hs",
       texto: "Para emergencias fuera del horario normal. Tiene un costo adicional que le informamos antes de ir." }
   },
 
   hero: {
-    etiqueta: "Horario normal 8:00 a 18:00 h · Guardia de urgencias 18:00 a 8:00 h",
     titulo: "Se cortó la luz.",
     destacado: "Nosotros la arreglamos.",
     texto: "Electricista con experiencia en Córdoba Capital. Atendemos urgencias y trabajos programados en su casa, comercio o industria, con trato amable, explicaciones claras y precio acordado antes de empezar.",
@@ -48,9 +47,7 @@ const SITE = {
       { icono: "gnd", titulo: "Puesta a tierra", texto: "Instalamos y controlamos la toma a tierra, que protege a su familia de las descargas." },
       { icono: "bulb", titulo: "Luces, tomas e interruptores", texto: "Colocamos y reparamos lámparas, tomacorrientes y llaves de luz que no andan bien." },
       { icono: "doc", titulo: "Certificado de instalación", texto: "Hacemos la revisión y el certificado que piden para trámites con la empresa de luz." },
-      { icono: "tab", titulo: "Trabajos industriales", texto: "Tableros industriales, motores, mantenimiento y reparaciones en fábricas, talleres y galpones." },
-      { icono: "bolt", titulo: "Aires acondicionados y bombas de agua", texto: "Instalación eléctrica segura para aires, bombas, termotanques y otros equipos de mucho consumo." },
-      { icono: "ok", titulo: "Cámaras y alarmas", texto: "Cableado y conexión de cámaras de seguridad, alarmas y portones eléctricos." }
+      { icono: "tab", titulo: "Trabajos industriales", texto: "Tableros industriales, motores, mantenimiento y reparaciones en fábricas, talleres y galpones." }
     ]
   },
 
@@ -70,7 +67,7 @@ const SITE = {
   pasos: {
     kicker: "Cómo trabajamos", titulo: "Cuatro pasos, sin vueltas",
     aviso: { titulo: "Si ve humo, chispas o siente olor a quemado",
-      texto: "No toque los cables ni el tablero y aléjese del lugar. Si hay fuego o peligro, llame primero a emergencias (100 Bomberos o 911)." },
+      texto: "No toque los cables ni el tablero y aléjese del lugar. Si hay fuego o peligro, llame primero a Bomberos (100) o a Emergencias (911)." },
     items: [
       { titulo: "Nos llama o escribe", texto: "Dígannos su dirección y qué pasó. Si es seguro, mándenos una foto por WhatsApp." },
       { titulo: "Coordinamos la visita", texto: "Confirmamos horario y condiciones de la visita según su zona." },
@@ -82,8 +79,8 @@ const SITE = {
   faq: {
     kicker: "Dudas comunes", titulo: "Preguntas frecuentes", texto: "Toque una pregunta para ver la respuesta.",
     items: [
-      { p: "¿Qué horario tienen?", r: "El horario normal es de 8:00 a 18:00 h. Entre las 18:00 y las 8:00 h atendemos urgencias con la guardia de urgencias." },
-      { p: "¿Qué es la guardia de urgencias?", r: "Es la atención de emergencias fuera del horario normal, entre las 18:00 y las 8:00 h. Tiene un costo adicional, que le informamos por teléfono antes de ir." },
+      { p: "¿Qué horario tienen?", r: "El horario normal es de 8:00 a 18:00 hs. Entre las 18:00 y las 8:00 hs atendemos urgencias con la guardia de urgencias." },
+      { p: "¿Qué es la guardia de urgencias?", r: "Es la atención de emergencias fuera del horario normal, entre las 18:00 y las 8:00 hs. Tiene un costo adicional, que le informamos por teléfono antes de ir." },
       { p: "¿Cuánto cuesta la visita?", r: "Depende de la zona y del trabajo. Se lo decimos por teléfono antes de ir y el presupuesto final se lo damos después de revisar. Sin sorpresas." },
       { p: "¿Llegan a mi barrio?", r: "Trabajamos solo en Córdoba Capital. Pásenos su dirección y le confirmamos." },
       { p: "¿Y si se quedó sin luz toda la cuadra?", r: "Si los vecinos también están sin luz, puede ser un problema de la red y conviene llamar a la empresa distribuidora. Si el problema es solo en su casa, nosotros lo revisamos." },
@@ -91,6 +88,6 @@ const SITE = {
     ]
   },
 
-  cta: { titulo: "Guarde este número para cuando lo necesite", texto: "Horario normal de 8:00 a 18:00 h. Guardia de urgencias de 18:00 a 8:00 h." },
+  cta: { titulo: "Guarde este número para cuando lo necesite", texto: "Horario normal de 8:00 a 18:00 hs. Guardia de urgencias de 18:00 a 8:00 hs." },
   pie: "© 2026 Ayrton Gallo · Electricista · Córdoba Capital, Argentina"
 };

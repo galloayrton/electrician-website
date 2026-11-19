@@ -28,8 +28,6 @@ svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-l
 .top a.tel{color:#000;background:var(--acento);font-weight:700;font-size:1.2rem;text-decoration:none;padding:10px 20px;border-radius:10px;display:inline-flex;gap:8px;align-items:center}
 .hero{background:linear-gradient(160deg,var(--negro),var(--negro-2));color:#fff;padding:54px 0 74px}
 .hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
-.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);padding:8px 16px;border-radius:12px;font-weight:700;font-size:1rem;line-height:1.4}
-.pill b{width:10px;height:10px;border-radius:50%;background:var(--acento);flex:none}
 .hero h1{color:#fff;font-size:3rem;margin:20px 0 16px}
 .hero h1 em{font-style:normal;color:var(--acento)}
 .lead{font-size:1.25rem;color:#ececec;max-width:32em;margin:0}
@@ -42,6 +40,15 @@ svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-l
 .b2:hover{background:#17613f}
 .b3{background:transparent;color:#fff;border-color:#fff}
 .b3:hover{background:rgba(255,255,255,.14)}
+.nb{white-space:nowrap}
+.hero .wrap{row-gap:32px}
+.banner{grid-column:1/-1;display:flex;border:2px solid rgba(255,255,255,.4);border-radius:4px;background:rgba(255,255,255,.08)}
+.bi{flex:1 1 0;display:flex;align-items:center;justify-content:center;gap:14px;padding:14px 20px;font-size:1.1rem;line-height:1.35;text-align:left}
+.bi+.bi{border-left:2px solid rgba(255,255,255,.4)}
+.bi strong{color:#fff}
+.dot{width:14px;height:14px;border-radius:50%;flex:none}
+.bn .dot{background:#5be28a;box-shadow:0 0 0 5px rgba(91,226,138,.3)}
+.bu .dot{background:var(--acento);box-shadow:0 0 0 5px rgba(245,160,0,.35)}
 .nota{font-size:1rem;color:#d4d4d4;margin:0}
 .badge{background:#fff;border-radius:16px;padding:30px 26px;text-align:center;box-shadow:0 18px 36px rgba(0,0,0,.3);border-top:6px solid var(--acento)}
 .badge .bolt{width:84px;height:84px;margin:0 auto 14px;border-radius:50%;background:var(--negro);color:var(--acento);display:grid;place-items:center;font-size:2.6rem}
@@ -110,6 +117,9 @@ footer{background:#0f1218;color:#d4d4d4;text-align:center;padding:24px 0;font-si
  html{font-size:106.25%}
  .hero{padding:36px 0 60px}
  .hero .wrap{grid-template-columns:1fr}
+ .banner{flex-direction:column}
+ .bi{justify-content:flex-start}
+ .bi+.bi{border-left:0;border-top:2px solid rgba(255,255,255,.4)}
  .hero h1{font-size:2.2rem}
  .btn{width:100%}
  .top a.tel{display:none}
@@ -122,7 +132,7 @@ footer{background:#0f1218;color:#d4d4d4;text-align:center;padding:24px 0;font-si
 /* ===== ESTILO INDUSTRIAL: esquinas rectas, bordes gruesos, franja de seguridad ===== */
 .top{border-bottom:0;position:relative;padding-bottom:12px}
 .top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(-45deg,var(--acento) 0 16px,var(--negro) 16px 32px)}
-.card,.hora,.slide,.badge,.pasos li,.aviso,details,.trust li,.btn,.pill,.logo .m,.ic,.top a.tel,.cnav button{border-radius:4px}
+.card,.hora,.slide,.badge,.pasos li,.aviso,details,.trust li,.btn,.logo .m,.ic,.top a.tel,.cnav button{border-radius:4px}
 .card,.hora,.slide,details,.trust li,.pasos li{border:2px solid var(--negro)}
 .card{box-shadow:6px 6px 0 var(--negro)}
 .badge{border:2px solid var(--negro);border-top:10px solid var(--acento)}

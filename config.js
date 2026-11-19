@@ -89,5 +89,16 @@ const SITE = {
   },
 
   cta: { titulo: "Guarde este número para cuando lo necesite", texto: "Horario normal de 8:00 a 18:00 hs. Guardia de urgencias de 18:00 a 8:00 hs." },
-  pie: "© 2026 Ayrton Gallo · Electricista · Córdoba Capital, Argentina"
+  pie: "© 2026 Ayrton Gallo · Electricista · Córdoba Capital, Argentina",
+
+  // Orden de las secciones: mové, sacá o repetí nombres
+  orden: ["hero", "confianza", "servicios", "horarios", "trabajos", "pasos", "faq", "cta"],
+
+  // SEO (lo usa build.js para armar los datos que lee Google)
+  seo: {
+    dominio: "https://cordobaelectricista.com",   // con https:// y sin barra final
+    titulo: "Electricista en Córdoba Capital | Ayrton Gallo",   // ideal: menos de 60 caracteres
+    descripcion: "Electricista en Córdoba Capital: cortocircuitos, tableros, puesta a tierra e industria. Atención de 8:00 a 18:00 hs y guardia de urgencias de 18:00 a 8:00 hs.",   // ideal: menos de 160 caracteres
+    imagen: ""   // opcional: foto para compartir (1200x630), por ejemplo "og-image.jpg", en la misma carpeta que index.html
+  }
 };
